@@ -1,5 +1,5 @@
 import unittest
-from LatexDoc.LatexDoc import LaTeXDocument
+from LatexDoc import LaTeXDocument
 import os
 
 
