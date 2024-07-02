@@ -1,7 +1,7 @@
 from LatexDoc import LaTeXDocument
 
 # Create a new LaTeX document
-doc = LaTeXDocument()
+doc = LaTeXDocument(filename="example.tex")
 
 # Add a section to the document
 doc.add_section("Introduction")

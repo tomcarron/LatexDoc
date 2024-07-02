@@ -1,2 +1,6 @@
 .env
-
+example.pdf
+example.tex
+example.aux
+example.log
+__pycache__/

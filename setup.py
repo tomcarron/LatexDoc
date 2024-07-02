@@ -2,14 +2,14 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name="LaTeXDocumentGenerator",
+    name="LaTeXDoc",
     version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Tom Carron",
+    author_email="tomocarron@gmail.com",
     description="Python module for generating simple LaTeX documents",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourgithub/LaTeXDocumentGenerator",
+    url="https://github.com/tomcarron/LaTeXDoc",
     packages=find_packages(),
     install_requires=[
         # List your project dependencies here.
