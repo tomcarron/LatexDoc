@@ -1,1 +1,1 @@
-unittest>=2.0.0
+unittest
