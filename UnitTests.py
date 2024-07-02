@@ -3,7 +3,6 @@ from LatexDoc import LaTeXDocument
 import os
 
 
-
 class TestLaTeXDocument(unittest.TestCase):
 
     def setUp(self):
