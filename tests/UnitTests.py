@@ -1,6 +1,7 @@
 import unittest
-from LatexDoc import LaTeXDocument
+from LatexDoc.LatexDoc import LaTeXDocument
 import os
+
 
 
 class TestLaTeXDocument(unittest.TestCase):
