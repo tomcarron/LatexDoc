@@ -2,7 +2,6 @@ import os
 
 
 class LaTeXDocument:
-    import os
 
     def __init__(self, filename):
         self.filename = filename

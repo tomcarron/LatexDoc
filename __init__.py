@@ -1,0 +1,1 @@
+from .LatexDoc import LaTeXDocument
