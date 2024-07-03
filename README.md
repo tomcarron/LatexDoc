@@ -18,9 +18,9 @@ The unit tests just check if the correct text has been added to the .tex file. C
 
 ## Installation
 
-Clone this github repo ```git clone https://github.com/tomcarron/LatexDoc.git```
-Navigate to the directory LatexDoc.
-```pip install --upgrade pip```
+Clone this github repo ```git clone https://github.com/tomcarron/LatexDoc.git``` \\
+Navigate to the directory LatexDoc. \\
+```pip install --upgrade pip``` \\
 ```pip install .```
 
 ## Usage
