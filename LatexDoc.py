@@ -42,27 +42,6 @@ class LaTeXDocument:
         self.add_line("\\caption" + "{" + short_caption + "}" + "{" + caption + "}")
         self.add_line("\\end{figure}")
 
-    def add_three_panel_plot(self, plot1, plot2, plot3, caption):
-        self.add_line("\\begin{figure}[h]")
-        self.add_line(
-            "\\subfloat{\\includegraphics[width=0.45\\textwidth]{"
-            + plot1
-            + "} } \\qquad"
-        )
-        self.add_line(
-            "\\subfloat{\\includegraphics[width=0.45\\textwidth]{"
-            + plot2
-            + "} } \\qquad"
-        )
-        self.add_line("\\centering")
-        self.add_line(
-            "\\subfloat{\\includegraphics[width=0.45\\textwidth]{"
-            + plot3
-            + "} } \\qquad"
-        )
-        self.add_line("\\caption[]" + "{" + caption + "}")
-        self.add_line("\\end{figure}")
-
     def generate_tex(self, main_doc=True):
         if main_doc == True:
             with open(self.filename, "w") as tex_file:
