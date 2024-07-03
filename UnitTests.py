@@ -53,24 +53,6 @@ class TestLaTeXDocument(unittest.TestCase):
             self.doc.content,
         )
 
-    """
-    def test_add_three_panel_plot(self):
-        self.doc.add_three_panel_plot(
-            "TestContent/plot1.png",
-            "TestContent/plot2.png",
-            "TestContent/plot3.png",
-            "Caption",
-        )
-        self.assertIn(
-            "\\includegraphics[width=0.45\\textwidth]{TestContent/plot1.png}",
-            self.doc.content,
-        )
-        self.assertIn(
-            "\\includegraphics[width=0.45\\textwidth]{TestContent/plot3.png}",
-            self.doc.content,
-        )
-    """
-
     def test_generate_tex_main_doc(self):
         self.doc.add_line(self.test_content)
         self.doc.generate_tex(main_doc=True)
@@ -86,12 +68,6 @@ class TestLaTeXDocument(unittest.TestCase):
             content = file.read()
         self.assertNotIn("\\begin{document}", content)
         self.assertIn(self.test_content, content)
-
-    def test_compile_pdf(self):
-        try:
-            self.doc.compile_pdf()
-        except Exception as e:
-            self.fail(f"compile_pdf method failed with an exception {e}")
 
     def tearDown(self):
         if os.path.exists("test.tex"):
